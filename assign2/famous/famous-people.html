@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+*Author: Feilim Lawless 
+*Assignment: WE4.1, Web App Assignment, Digital Skills Academy
+*Student ID: D15128634
+*Date: 25/072016
+-->
+<title>WDP Assignment 2 Famous People</title>
+<!--include the various css stylings contained in seperate .css files -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/bootstrap-theme.css">
+<link rel="stylesheet" href="../css/custom.css">
+<!-- set viewport width to match device used, initialise zoom level to 1:1 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+<body>
+<div class="container">
+    <!-- responsive navigation bar contained within nav tags-->
+    <!-- 'navbar-default' class given blue colour theme via http://getbootstrap.com/customize/?id=505053adc73b9258609a291c9db6b23b -->
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#">
+                <img src="../img/Flag_of_Ecuador.png" alt="">
+            </a>
+        </div>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html">About Ecuador</a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Tourist Attractions<b class="caret"></b></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a href="../tourist/galapagos.html">Galapagos</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="../tourist/cotopaxi.html">Cotopaxi</a></li>
+                        <li><a href="../tourist/yasuni.html">Yasuni Nature Reserve</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="#">Famous People</a></li>
+                <li><a href="../history/history.html">History</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Famous People</h1>
+            </div>
+        </div>
+
+        <!--create section that will function as an 'accordion'-->
+        <div id="accordion-famous" class="panel-group">
+            <div class="panel panel-default"> 
+                <div class="panel-heading panel-heading-custom">
+                    <h4 class="panel-title">
+                        <!-- use bootstrap data attributes to apply collapsible functionality to panel with id of "correa" within the panel group of id "accordion-famous" -->
+                        <a data-toggle="collapse" data-parent="#accordion-famous" href="#correa">Rafael Correa</a>
+                    </h4>
+                </div>
+                <!-- apply "in" class to panel so by default it shows when page is first loaded -->
+                <div id="correa" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="../img/correarafael.jpg" class="img-responsive center-block" alt="Correa">
+                            </div>
+                            <div class="col-md-9">
+                           
+                                <p>Politician who became President of the Republic of Ecuador in 2007 and led the country in economic and social reform. He has been accused of being an authoritarian leader but many have still credited him with reducing poverty and unemployment in his country. </p>
+                                <p>He received a degree in economics from Belgium's Universite Catholique de Louvain and went on to earn a Ph.D. from the University of Illinois at Urbana-Champaign.</p>
+                                <p>He served as both director of the Ecuadorian Ministry of Education and Culture and Minister of Finance before becoming President of the Republic of Ecuador and President pro tempore of the Union of South American Nations.</p>
+                                <p>He married Anne Malherbe Gosselin in Belgium. Together, the couple had three children: Anne Doninique, Miguel, and Sofia.</p>
+                                <p>He was a political ally of the late Venezuelan President, Hugo Chavez.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading  panel-heading-custom">
+                    <h4 class="panel-title">
+                        <!-- use bootstrap data attributes to apply collapsible functionality to panel with id of "guayasamin" within the panel group of id "accordion-famous" -->
+                        <a data-toggle="collapse" data-parent="#accordion-famous" href="#guayasamin">Oswaldo Guayasamin</a>
+                    </h4>
+                </div>
+                <div id="guayasamin" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="../img/guayasamin.jpg" class="img-responsive center-block" alt="Oswaldo Guayasamin">
+                            </div>
+                            <div class="col-md-9">
+                           
+                                <p>Oswaldo Guayasamin was born in Quito, the capital of Ecuador, on July 6, 1919. He graduated from the School of Fine Art in Quito as painter and sculptor. He carried out his first exhibit when he was 23, in 1942.</p>
+
+                                <p>He achieved in his youth all National Awards, and was credited in 1952, at the age of 33, the Grand Award of the Biennial of Spain and later the Grand Award of the Biennial of Sao Paulo. His last exhibits were personally inaugurated in the Palace Museum of Luxemberg in Paris, and in the Museo Palais de Glace in Buenos Aires in 1995.</p>
+
+                                <p>His humanist work, marked as expressionist, reflects the pain and misery that the larger part of humanity has endured, and denounces the violence that every human being has had to live with in this monstrous 20th century marked by world wars, civil wars, genocide, concentration camps, dictatorships, and tortures. He had been working on his top work "The Chapel of Man" when he died in 1999.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading  panel-heading-custom">
+                    <h4 class="panel-title">
+                        <!-- use bootstrap data attributes to apply collapsible functionality to panel with id of "valencia" within the panel group of id "accordion-famous" -->
+                        <a data-toggle="collapse" data-parent="#accordion-famous" href="#valencia">Antonio Valencia</a>
+                    </h4>
+                </div>
+                <div id="valencia" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="../img/valencia.jpg" class="img-responsive center-block" alt="Antonio Valencia">
+                            </div>
+                            <div class="col-md-9">
+                           
+                                <p>Luis Antonio Valencia Mosquera, commonly known as Antonio Valencia, born 4 August 1985, is an Ecuadorian professional footballer who plays as a right winger and right-back for Manchester United and the Ecuador national team.</p>
+
+                                <p>After progressing through the youth system at El Nacional, Valencia became a first team regular and made over 80 appearances for the club before signing for La Liga side Villarreal in 2005. He only made two league appearances for the Spanish side in between successful loan spells at Recreativo de Huelva for the 2005-06 season and later English Premier League club Wigan Athletic from 2006 to 2008. Wigan later signed Valencia on a three-year deal for an undisclosed fee in January 2008. His performances for Wigan soon attracted attention from several high profile clubs, eventually signing for Manchester United in June 2009.</p>
+
+                                <p>Valencia made his Ecuador debut in 2005 and scored two goals in the process. He represented his country at the 2006 FIFA World Cup, the 2007 Copa America, the 2011 Copa America and the 2014 FIFA World Cup. Since making his debut, Valencia has won over 80 caps and scored nine goals for his country.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    
+    </div>
+</div>
+<!-- /.container -->
+<!-- include jquery and bootstrap javascript plugins necessary for dynamic functioning of page-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+  $( function() {
+    //activate accordion() method for panel group with id "accordion-famous"
+    $( "#accordion-famous" ).accordion();
+  } );
+</script>
+</body>
+</html>    

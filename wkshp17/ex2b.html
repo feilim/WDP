@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+ <link rel="stylesheet" href="css/WE41_A_WDP_17_Workshop_tabs.css">
+   <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.7.custom.min.js"></script>
+  <title>Workshop 17 Ex2</title>
+</head>
+
+<body>
+<div id="tabs">
+  <ul>
+    <li><a href="#page-1">1</a></li>
+    
+
+
+  </ul> 
+
+<div id="page-1" class="ui-tabs-panel"><p>here's some text....</p></div>
+
+</div>
+
+<script>
+    
+
+    $(document).ready(function() {
+    $("div#tabs").tabs();
+
+    for (var i=2; i < 8; i++) {
+       
+
+        $("div#tabs ul").append(
+            "<li><a href='#page-" + i + "'>" + i + "</a></li>"
+        );
+        $("div#tabs").append(
+            "<div id='page-" + i + "class='ui-tabs-panel'>more text " + i + "</div>"
+        );
+        $("div#tabs").tabs("refresh");
+      };
+    });                    
+</script> 
+
+
+
+
+
+
+
+</body>

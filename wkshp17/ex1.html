@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <title>Workshop 17 </title>
+</head>
+
+<body>
+
+<ul id="myAccordion">
+  <li><a href="#">Click me 1</a>
+    <ul>
+        <li><a href="#">Click me a</a></li>  
+        <li><a href="#">Click me b</a></li>
+        <li><a href="#">Click me c</a></li>
+      </ul></li>
+
+    
+  <li><a href="#">Click me 2</a>
+    <ul>
+        <li><a href="#">Click me d</a></li>  
+        <li><a href="#">Click me e</a></li>
+        <li><a href="#">Click me f</a></li>
+      </ul></li>
+  <li><a href="#">Click me 3</a>
+      <ul>
+        <li><a href="#">Click me g</a></li>  
+        <li><a href="#">Click me h</a></li>
+        <li><a href="#">Click me i</a></li>
+      </ul></li>
+  <li><a href="#">Click me 4</a>
+      <ul>
+        <li><a href="#">Click me j</a></li>  
+        <li><a href="#">Click me k</a></li>
+        <li><a href="#">Click me l</a></li>
+      </ul></li>
+</ul>	
+
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+    $(function(){
+        //make element an accordian
+        $("#myAccordion").accordion();
+    });
+  </script>
+</body>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+ <link rel="stylesheet" href="css/WE41_A_WDP_17_Workshop_tabs.css">
+   <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.7.custom.min.js"></script>
+  <title>Workshop 17 Ex2</title>
+</head>
+
+<body>
+<div id="tabs">
+  <ul>
+    <li><a href="#page-1">1</a></li>
+    <li><a href="#page-2">2</a></li>
+    <li><a href="#page-3">3</a></li>
+    <li><a href="#page-4">4</a></li>
+    <li><a href="#page-5">5</a></li>
+    <li><a href="#page-6">6</a></li>
+    <li><a href="#page-7">7</a></li>
+    <li><a href="#page-8">8</a></li>
+    <li><a href="#page-9">9</a></li>
+    <li><a href="#page-10">10</a></li>
+    <li><a href="#page-11">11</a></li>
+    <li><a href="#page-12">12</a></li>
+    <li><a href="#page-13">13</a></li>
+    <li><a href="#page-14">14</a></li>
+    <li><a href="#page-15">15</a></li>
+  </ul> 
+
+<div id="page-1" class="ui-tabs-panel"><p>here's some text....</p></div>
+<div id="page-2" class="ui-tabs-panel"><p>here's  text....</p></div>
+<div id="page-3" class="ui-tabs-panel"><p>here's some blah....</p></div>
+<div id="page-4" class="ui-tabs-panel"><p>here's sdfsdxt....</p></div>
+<div id="page-5" class="ui-tabs-panel"><p>here's some xxx....</p></div>
+<div id="page-6" class="ui-tabs-panel"><p>here's some tebcvcvt....</p></div>
+<div id="page-7" class="ui-tabs-panel"><p>here's scccct....</p></div>
+<div id="page-8" class="ui-tabs-panel"><p>here's some ctext....</p></div>
+<div id="page-9" class="ui-tabs-panel"><p>here's sovxzvzxvext....</p></div>
+<div id="page-10" class="ui-tabs-panel"><p>here's some ....</p></div>
+<div id="page-11" class="ui-tabs-panel"><p>here's somexcvxcxt....</p></div>
+<div id="page-12" class="ui-tabs-panel"><p>here's cvs text....</p></div>
+<div id="page-13" class="ui-tabs-panel"><p>here's text....</p></div>
+<div id="page-14" class="ui-tabs-panel"><p>here's fdfe text....</p></div>
+<div id="page-15" class="ui-tabs-panel"><p>here's somvvbe text</p></div>
+
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(function(){
+
+  var $tabs = $('#tabs').tabs();
+
+  $(".ui-tabs-panel").each(function(i){
+
+    var totalSize = $(".ui-tabs-panel").size() - 1;
+
+    if (i != totalSize) {
+
+      //next = i + 3; jumps forward 2 tabs
+      next = i + 2;
+      $(this).append("<a href='#'' class='next-tab mover' rel='" + next + "'>Next Page &#187;</a>");
+    }
+    if (i != 0) {
+
+      //prev = i-1; jumps back 2 tabs
+      prev = i;
+      $(this).append("<a href='#'' class='prev-tab mover' rel='" + prev + "'>&#171; Prev Page</a>");
+
+    }
+  });
+
+  $('.next-tab, .prev-tab').click(function() {
+      $tabs.tabs('select', $(this).attr("rel"));
+      return false;
+  });
+});
+
+
+
+</script>
+</body>

@@ -1,0 +1,25 @@
+
+
+#navigation {
+	position: absolute;
+	width: 180px;
+	height: 500px;
+	margin: 20px;
+	margin-top: 50px;
+	border-right: 1px solid #c6ec8c;
+	font-weight: normal; } 
+
+
+#contentArea {
+	position: absolute;
+	padding: 0 0 20px 0;
+	/* top right bottom left */
+	margin-top: 50px;
+	margin-left: 195px;}
+
+img {
+	position: relative;
+	top:-30px;
+	/*position: fixed;
+	top: 30px;
+	right: 5px;*/}

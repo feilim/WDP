@@ -1,0 +1,68 @@
+
+
+/*panel '.panel-heading-custom' custom class used on '/famous/famous-people.html' page */
+.panel-default > .panel-heading-custom {
+  color: #301b28;
+  background-color: #ddc5a2;
+  background-image: none;
+}
+
+/* 'btn-custom' custom class used on 'tourist/yasuni.html' page*/
+.btn-custom {
+  color: #301b28;
+  background-color: #ddc5a2;
+  border-color: #cccccc;
+  font-weight: bold;
+}
+
+.btn-custom:hover {
+  color: #ddc5a2;
+  background-color: #301b28;
+  border-color: #adadad;
+}
+
+
+/*overwrites some of the bootstrap 'pager' class stylings 
+(used on '/history/history.html' and 'history/history2.html' pages) */
+
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 8px 14px;
+  color: #301b28;
+  background-color: #ddc5a2;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.pager li > a:hover,
+.pager li > a:focus {
+  color: #ddc5a2;
+  text-decoration: none;
+  background-color: #301b28;
+}
+
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: #757575;
+  background-color: #ddc5a2;
+  cursor: not-allowed;
+}
+
+/* gives a fade-in effect to each page using css animation (avoids DOM flickering)*/
+/* ref: http://stackoverflow.com/questions/32138216/fade-between-pages-using-jquery */
+body {
+    animation: myfadeInAnimation 2s;
+}
+
+@keyframe myfadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes myfadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

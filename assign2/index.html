@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+*Author: Feilim Lawless 
+*Assignment: WE4.1, Web App Assignment, Digital Skills Academy
+*Student ID: D15128634
+*Date: 25/072016
+-->
+<title>WE41 WDP Assignment 2 Homepage</title>
+<!--include the various css stylings contained in seperate .css files -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+<link rel="stylesheet" href="css/custom.css">
+<!-- set viewport width to match device used, initialise zoom level to 1:1 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+<body>
+<div class="container-fluid">
+    <!-- responsive navigation bar contained within nav tags-->
+    <!-- 'navbar-default' class given blue colour theme via http://getbootstrap.com/customize/?id=505053adc73b9258609a291c9db6b23b -->
+        <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#">
+                <img src="img/Flag_of_Ecuador.png" alt="">
+            </a>
+        </div>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">About Ecuador</a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Tourist Attractions<b class="caret"></b></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a href="tourist/galapagos.html">Galapagos</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="tourist/cotopaxi.html">Cotopaxi</a></li>
+                        <li><a href="tourist/yasuni.html">Yasuni Nature Reserve</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="famous/famous-people.html">Famous People</a></li>
+                <li><a href="history/history.html">History</a></li>
+            </ul>
+            
+        </div>
+
+    </nav>
+    <!-- Page Content -->
+    <div class="container-fluid">
+
+        <!-- Heading Row -->
+        <div class="row">
+            <!-- initialise column of width 8 (two thirds of 12 column bootstrap layout) -->
+            <div class="col-md-8">
+                <h1>Ecuador</h1>
+                <h3>Location, Size, and Extent</h3>
+                <p>The fourth-smallest country in South America, Ecuador is located on the west coast of the continent and is crossed by the equator (the country gets its name from the Spanish word for "equator"). It has a length of 714 km (444 mi) n-s and a width of 658 km (409 mi) e-w. Ecuador borders Colombia on the n, Peru on the e and s, and the Pacific Ocean on the w, with a total boundary length of 4,247 km (2,639 mi), of which 2,237 km (1,398 mi) is coastline. (Ecuador has lost about two-thirds of the territory it once claimed to Colombia and Peru.)</p>
+                
+                <p>The Galapagos Islands, a province of Ecuador with an area totaling 8,010 sq km (3,093 sq mi), are approximately 1,130 km (700 mi) off the coast on the equator at 89 degrees to 92 degrees w. The total area of the republic and its territory is estimated at 283,560 sq km (109,483 sq mi). Comparatively, the area occupied by Ecuador is slightly smaller than the state of Nevada. Ecuador also claims about 200,000 sq km (77,000 sq mi) of land awarded to Peru under the 1942 Protocol of Rio de Janeiro. Armed hostilities flared along a still undemarcated stretch of the border in January 1981, but by 20 February, a 14-km (9-mi) demilitarized zone had been arranged along the disputed line. </p>
+
+                <h3>Climate</h3>
+                The climate varies with the region. Most of the coast consists of wet, tropical forest, increasingly humid toward the north. The cold Humboldt Current (also called the Peruvian Current), which flows northward along the coast of Peru and then heads out into the Pacific off the coast of central Ecuador, limits the rainfall on a strip of the coast extending from as far north as the Bay of Caraquez and widening to include most of the coastal lowlands south of Guayaquil. In the Guayaquil area there are two seasons: a hot rainy period, lasting from January to May; and a cooler dry season, during the rest of the year, when sea breezes modify the equatorial heat.
+                
+            </div>
+            <!-- /.col-md-8 -->
+            <!-- initialise column of width 4 (one third of 12 column bootstrap layout) -->
+            <div class="col-md-4">
+                
+                <h2>Statistics</h2>
+                <!-- 'table-reflow' class applied for optimal viewing of table on different device screen sizes-->
+                <div class="table table-reflow">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Capital:</th>
+                                <td>Quito</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Population:</th>
+                                <td>15.74 million (2013)</td>
+                            </tr>
+                             <tr>
+                                <th scope="row">Continent:</th>
+                                <td>South America</td>
+                            </tr>
+                             <tr>
+                                <th scope="row">Official language:</th>
+                                <td>Spanish</td>
+                            </tr>
+                        </tbody>                                       
+                    </table>
+                </div>
+                
+               <!-- embeds a responsive youtube video to the page with fullscreen functionality-->
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/P4HI7Tcdygg"  allowfullscreen></iframe>
+                </div>  
+                
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</div>
+<!-- include jquery and bootstrap javascript plugins necessary for dynamic functioning of page-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>    

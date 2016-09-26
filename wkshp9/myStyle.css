@@ -1,0 +1,15 @@
+body {font-family:arial;}
+
+p {font-weight:bold;}
+
+.differentText {font-family: courier;}
+
+#highlight {border: 5px solid black;} 
+
+.bigger {font-size: 150%}
+.bigger:first-child {color: red;}
+
+a:link {color: #ff0000;} /*blue */
+a:visited {color: red;}
+a:hover {color: #ff69b4;} /*hotpink*/
+a:active {color: green;}
